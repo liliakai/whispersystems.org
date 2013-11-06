@@ -15,7 +15,7 @@ body {
 }
 
 .container { 
-  margin: 0 auto !important;
+  margin: 0 1em;
   padding: 0 !important;
 }
 
@@ -358,7 +358,6 @@ ul.social-buttons li{
 #main article { 
   clear: both;
   padding: 60px 0 40px 0;
-  min-width: 1140px;
 }
 #main article h2 {
   color: #333;
@@ -381,19 +380,13 @@ ul.social-buttons li{
   font-family: 'OpenSansSemibold', Helvetica, Arial, sans-serif;
 }
 
-.checkpoints { 
-  width: 60%;
-  float: left; 
-  padding-left: 30px;
-}
 .checkpoint {
   color: #555;
   background-image: url(<%= asset_path "body/checkmark.png" %>);
   background-repeat: no-repeat;
   padding-left: 100px;
-  height: 70px;
-  margin-bottom: 60px;
   margin-top: 20px;
+  min-height: 79px;
 }
 .checkpoint h4 { 
   font-size: 22px;
@@ -409,11 +402,7 @@ ul.social-buttons li{
   font-size: 16px;
 }
 
-#privacy { height: 500px; }
-#privacy .illustration { 
-  float: right; 
-  margin-right: 10px; 
-}
+#privacy .illustration { float: right; }
 
 .striped {
   background-image: url(<%= asset_path "body/texture.png" %>);
