@@ -419,15 +419,12 @@ ul.features {
   list-style: none;
   color: #555;
   padding-top: 10px;
-  width: 300px;
 }
 
 ul.features li {
   display: block;
   padding: 12px 25px;
   margin-right: 10px;
-  width: 380px;
-  float: left;
   position: relative;
 }
 
@@ -449,27 +446,13 @@ ul.features li a.active {
   height: 850px;
 }
 
-#encrypted_voice h3 {
-  padding-left: 220px;
-  padding-right: 220px;
-}
-
 #encrypted_voice .carousel-container {
-  width: 585px;
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  height: 50px;
-  /*background-color: red; */
+  float: left;
 }
 #encrypted_voice .carousel-frame {
-  position: absolute;
-  bottom: -75px;
+  margin-top: -75px;
 }
 
-
-#encrypted_voice ul.features { margin-left: 550px; }
-#encrypted_voice .buttons { margin-left: 550px; }
 
 #encrypted_texts { 
   height: 850px; 
@@ -566,14 +549,10 @@ pre {
   background-repeat: no-repeat;
   /* default to a RedPhone phone image */
   background-image: url(<%= asset_path "body/full_device.png" %>);
-  width: 400px;
-  padding-left: 31px;
-  padding-top: 70px;
-  margin-left: 150px;
+  padding: 81px 31px;
 }
 .carousel { margin-bottom: 0; overflow: hidden; }
 .carousel, .carousel img {  margin-left: 20px; margin-top: 40px; }
-.carousel-inner { width: 290px; height: 699px; }
 .carousel .item { overflow: hidden; }
 a.carousel-control { text-decoration: none; }
 
@@ -587,7 +566,6 @@ a.carousel-control { text-decoration: none; }
 }
 #textsecure_carousel_frame .carousel, 
 #textsecure_carousel_frame .carousel img { /*width: 274px;*/ }
-#textsecure_carousel_frame .carousel .carousel-inner { /*height: 305px;*/ height: 699px; }
 
 /*********
  * Icons
@@ -597,11 +575,10 @@ i.icon {
   background-image: url(<%= asset_path "body/icons.png" %>);
   background-repeat: no-repeat;
   display: inline-block;
-  position: absolute;
-  top: 12px;
-  left: -20px;
   width: 30px; 
   height: 30px;
+  float: left;
+  margin-right: 1em;
 }
 
 /* red icons -- 30px wide */
