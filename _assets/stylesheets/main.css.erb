@@ -11,7 +11,6 @@ body {
 #container {
   background-color: #fff; 
   margin: 0 auto;
-  min-width: 1140px;
   /* max-width: 1500px; */
 }
 
@@ -79,17 +78,13 @@ body {
 }
 
 .bar {
-  height: 79px;
   position: relative;
-  width: 1140px;
   margin: 0 auto;
 }
 .bar ul {
+  float: right;
   margin: 0;
   list-style: none;
-  position: absolute;
-  top: 5px;
-  right: 20px;
 }
 .bar li {
   float: left;
@@ -135,17 +130,16 @@ body {
 
 .main-head {
   background-color: #171717;
-  min-width: 1140px;
 }
 .header-graphics {
   overflow: visible;
-  width: 420px;
-  height: 19px;
   z-index: 10;
   position: relative;
-  margin-left: 40px;
+  margin: 0 1em;
   vertical-align: top;
 }
+#raven-logo { position: absolute; }
+#text-logo { margin-left: 154px; }
 .header-graphics a { text-decoration: none; }
 .header-graphics img {
   vertical-align: top;
@@ -166,7 +160,6 @@ body {
   margin-top: 0;  /* if this is not here, messes up bar size above. */
   padding-top: 160px;
   text-align: right;
-  width: 1140px;
   margin: 0 auto;
 }
 #telephone .tagline1 {
