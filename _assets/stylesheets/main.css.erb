@@ -81,6 +81,7 @@ body {
 .bar ul {
   float: right;
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 .bar li {
@@ -132,15 +133,15 @@ body {
   overflow: visible;
   z-index: 10;
   position: relative;
-  margin: 0 1em;
-  vertical-align: top;
 }
-#raven-logo { position: absolute; }
-#text-logo { margin-left: 154px; }
+#raven-logo {
+  position: absolute;
+  width: 20%;
+  max-width: 154px;
+}
+#raven-logo img { width: 100%; }
+#text-logo { display: inline-block; margin-left: 20%; }
 .header-graphics a { text-decoration: none; }
-.header-graphics img {
-  vertical-align: top;
-}
 
 #telephone {
   background-color: #696969;
