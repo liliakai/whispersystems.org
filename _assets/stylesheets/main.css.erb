@@ -135,12 +135,13 @@ body {
   position: relative;
 }
 #raven-logo {
-  position: absolute;
-  width: 20%;
+  float: left;
+  width: 17%;
   max-width: 154px;
+  margin-right: 1em;
 }
 #raven-logo img { width: 100%; }
-#text-logo { display: inline-block; margin-left: 20%; }
+#text-logo { display: inline-block; }
 .header-graphics a { text-decoration: none; }
 
 #telephone {
@@ -206,20 +207,12 @@ body {
  **********/
 
 #blog {
-  clear: both;
-  background-image: url(<%= asset_path "body/black_down_arrow.png" %>);
-  background-repeat: no-repeat;
-  background-position: 150px 0;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   min-height: 431px;
+  max-width: 760px;
 }
 
-#blog #title {
-  margin-left: 140px;
-}
+#blog .arrow { float: left; }
 
 #blog #title h2 {
   margin: 0px;
@@ -271,10 +264,8 @@ body {
 }
 
 #blog article {
-  margin-left: 140px;
   font: 100%/1.5em 'Nobile';
   font-weight: normal;
-  padding-right: 100px;
 /*  margin-left: 200px;*/
 }
 
@@ -584,8 +575,7 @@ i.icon.cell {
 
 .rss {
   float: right;
-  margin-right: 120px;
-  margin-top: 40px;
+  margin: 1em;
   opacity: 0.5;
 }
 

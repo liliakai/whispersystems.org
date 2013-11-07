@@ -4,15 +4,16 @@ layout: root
 
 <section id="blog">
 
-  <div class="rss"><a href="/blog/rss.xml"><img class="feed" src="{% asset_path body/rss.png %}"/></a></div>
-
-  <section id="title">
+  <section id="title" class="container">
+    <img class="arrow" src="{% asset_path body/black_down_arrow.png %}">
+    <div class="rss"><a href="/blog/rss.xml"><img class="feed" src="{% asset_path body/rss.png %}"/></a></div>
     {% assign title_parts = page.title | split: ' >> ' %}
     {% if title_parts[1] and title_parts.first == "Blog" %}
-      <h2><a href="/blog/">Blog</a> >> {{ title_parts[1] }}</h2> <!-- why the ">>", suggest changing that, or adding it h2 css declaration via pseudoselector -->
+      <h2><a href="/blog/">Blog</a> >> {{ title_parts[1] }}</h2>
     {% else %}
       <h2>{{ page.title }}</h2>
     {% endif %}
+
   </section>
 
   {{ content }}

@@ -4,7 +4,7 @@ title: Blog
 ---
 
 {% for post in site.posts %}
-  <article class="snippet">
+  <article class="container snippet">
     {% assign title_parts = post.title | split: ' >> ' %}
     <h2><a href="{{ post.url }}">{{ title_parts[1] }}</a></h2>
     <h3 class="date">{{ post.date | date_to_string }}</h3>
