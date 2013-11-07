@@ -403,7 +403,14 @@ ul.social-buttons li{
   font-size: 16px;
 }
 
-#privacy .illustration { float: right; }
+#privacy .illustration {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 40.5em) {
+  #privacy .illustration { float: right; }
+}
 
 .striped {
   background-image: url(<%= asset_path "body/texture.png" %>);
@@ -444,17 +451,15 @@ ul.features li a.active {
   border-bottom: 1px solid #ddd;
 }
 
-#encrypted_voice .carousel-container {
-  float: left;
+@media screen and (min-width: 40.5em) {
+  #encrypted_voice .carousel-container {
+    float: left;
+  }
+  #encrypted_texts .carousel-container {
+    float: right;
+  }
 }
 
-#encrypted_texts {
-  position: relative;
-}
-
-#encrypted_texts .carousel-container {
-  float: right;
-}
 
 #bottom {
   padding-top: 50px;
@@ -516,12 +521,13 @@ pre {
   background-repeat: no-repeat;
   /* default to a RedPhone phone image */
   background-image: url(<%= asset_path "body/full_device.png" %>);
-  padding: 61px 31px;
+  padding: 94px 71px;
+  width: 258px; /* width of the screenshots */
   background-position: center;
-  margin: -5px 1em 0 1em;
+  margin: -5px auto 2em auto;
 }
 .carousel { margin-bottom: 0; overflow: hidden; }
-.carousel, .carousel img { margin-top: 40px; }
+.carousel { margin-top: 12px; }
 .carousel .item { overflow: hidden; }
 a.carousel-control { text-decoration: none; }
 
@@ -537,6 +543,7 @@ i.icon {
   height: 30px;
   float: left;
   margin-right: 1em;
+  margin-top: 0.25em;
 }
 
 /* red icons -- 30px wide */
