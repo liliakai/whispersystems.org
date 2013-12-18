@@ -1,0 +1,34 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Whisper Systems Blog</title>
+    <link>http://www.whispersystems.org/blog/</link>
+    <atom:link href="http://www.whispersystems.org/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Open Whisper Systems Blog</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+
+    {% for post in site.posts %}
+    <item>
+      {% assign title_parts = post.title | split: ' >> ' %}
+      <title>{{ title_parts[1] }}</title>
+      <link>http://www.whispersystems.org{{ post.url }}</link>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <author>moxie@whispersystems.org (Moxie Marlinspike)</author>
+      <guid>http://www.whispersystems.org{{ post.id }}</guid>
+      <description>
+        {% assign parts = post.content | split: 'XXXXX' %}
+        {{ parts.first | xml_escape }}
+        {% if parts[1] %}
+        <a href="http://www.whispersystems.org{{ post.url }}"><em>Read more...</em></a>
+        {% endif %}
+      </description>
+    </item>
+    {% endfor %}
+
+  </channel> 
+</rss>

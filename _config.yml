@@ -1,0 +1,4 @@
+safe: false
+auto: true
+pygments: true
+permalink: /blog/:title

@@ -1,0 +1,13 @@
+---
+layout: root
+title: Documentation
+---
+
+<section class='documentation'>
+  <h1>Documentation</h1>
+  {% for page in site.pages %}
+    {% if page.doc %}
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    {% endif %}
+  {% endfor %}
+</section>

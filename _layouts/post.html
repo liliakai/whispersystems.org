@@ -1,0 +1,43 @@
+---
+layout: blog
+---
+
+<article>
+
+{% assign parts = content | split: 'XXXXX' %}
+{{ parts.first }}
+{% if parts[1] %}
+{{ parts[1] }}
+{% endif %}
+
+  <ul class="social-buttons">
+    <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="whispersystems">Tweet</a></li>
+    <li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.whispersystems.org{{ page.url | cgi_escape }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:107px; height:21px;" allowTransparency="true"></iframe></li>
+    <li><a href="http://news.ycombinator.com/submit"  data-title="{{ page.blog }}" data-url="http://whispersystems.me{{ page.url }}" class="hn-share-button">Vote on HN</a></li>
+  </ul>
+
+  <div id="disqus_thread"></div>
+
+<!-- Final scripts after vital HTML elements in post -->
+
+  <script>
+      var disqus_shortname = 'openwhispersystems';
+
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+  <script>
+    (function(d, t) {
+    var g = d.createElement(t),
+    s = d.getElementsByTagName(t)[0];
+    g.src = '//hnbutton.appspot.com/static/hn.js';
+    s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+  </script>
+
+</article>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js"> <!-- Classes dumped on HTML element by Modernizr -->
+  <head>
+    <meta charset="utf-8">
+    <!-- meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" -->
+
+    {% assign title_parts = page.title | split: " " %}
+    {% if title_parts[0] == "Blog" and title_parts[1] == ">>" %}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@whispersystems">
+    <meta name="twitter:creator" content="@moxie">
+    <meta name="twitter:url" content="https://www.whispersystems.org{{ page.url }}">
+
+    {% assign title_parts = page.title | split: " >> " %}
+    <meta name="twitter:title" content="{{ title_parts[1] }}">
+
+    {% assign content_parts = page.content | split: 'XXXXX' %}
+    <meta name="twitter:description" content="{{ content_parts.first | markdownify | strip_html }}">
+
+    {% if page.image %}
+    <meta name="twitter:image" content="https://www.whispersystems.org{{ page.image }}" />
+    {% endif %}
+    {% endif %}
+
+    <title>Open WhisperSystems >> {{ page.title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="{% asset_path header/favicon.ico %}" type="image/x-icon">
+    <link rel="icon" href="{% asset_path header/favicon.ico %}" type="image/x-icon">
+
+    {% stylesheet normalize %}
+    {% stylesheet bootstrap-carousel %}
+    {% stylesheet main %}
+<!--
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/bootstrap-carousel.css">
+    <link rel="stylesheet" href="/css/main.css">
+-->
+    <link rel="stylesheet" href="/fonts/opensans/stylesheet.css">
+    <link rel="stylesheet" href="/fonts/bitter/stylesheet.css">
+
+    {% javascript vendor/modernizr-2.6.2-respond-1.1.0.min %}
+<!--    <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
+
+    <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div id="container">
+        <header class='main-head'>
+          <nav class='topnav bar'>
+            <div class='header-graphics'>
+              <a href='/'>
+                <img class='bird' alt='Raven Logo' src="{% asset_path header/raven.png %}" width='154' height='181'>
+              </a>
+              <a href='/'>
+                <img class='whisper' alt="Whisper Systems" src="{% asset_path header/whispersystems.png %}" width="243" height="79">
+              </a>
+            </div>
+
+            <ul>
+              <li><a href="/">About Us</a></li>
+              <li><a class='scroll' href="/#privacy">Our Apps</a></li>
+              <li><a href="/blog/">The Blog</a></li>
+<!--
+              <li><a title='Facebook' class='facebook' href="#">Facebook</a></li>
+-->
+              <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
+            </ul>
+          </nav>
+
+          {% if page.header == true %}
+            <div id="telephone">
+              <div class='text'>
+                <p class='tagline1'>Security, simplified.</p> <!-- ".tagline1" and ".tagline2" could probably be changed to be clearer -->
+                <p class='tagline2'><strong>Open Source</strong> security for mobile devices.</p>
+              </div>
+            </div>
+
+            <div class='container solutions'> <!-- .solutions is not really a semantic description. -->
+              <p>Get started.</p>
+              <img class='spacer' src="{% asset_path header/spacer.png %}">
+              <img class='mobileicons' src="{% asset_path header/mobile.png %}" alt="Mobile Icons">
+            </div>
+          {% endif %}
+        </header>
+
+        {{ content }}
+
+        <section id='bottom'> <!-- text in #bottom needs to be in semantic HTML elements -->
+          Stay in touch,
+          <a href="https://twitter.com/whispersystems" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"> Follow @whispersystems </a> on Twitter.
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </section>
+
+        <div class='bar-wrap'>
+          <footer class='bar'>
+            <p class='notice copyright'>&copy; 2013 WhisperSystems &mdash; info@whispersystems.org</p>
+            <nav class='botnav'>
+              <ul>
+                <li><a href="/">About Us</a></li>
+                <li><a class='scroll' href="/#privacy">Our Apps</a></li>
+                <li><a href="/blog/">The Blog</a></li>
+<!--                <li><a title='Facebook' class='facebook' href="#">Facebook</a></li> "Is this removed permanently? If so, delete! -->
+                <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </div> <!-- /container -->
+    </div> <!-- /wrap -->
+
+<!-- Final scripts after vital HTML elements in root -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+    {% javascript vendor/bootstrap-transition %}
+    {% javascript vendor/bootstrap-carousel %}
+    {% javascript main %}
+
+<!--<script src="/js/vendor/bootstrap-transition.js"></script>
+    <script src="/js/vendor/bootstrap-carousel.js"></script>
+    <script src="/js/main.js"></script> "Commented out because of JEKYLL Assets" -->
+
+    <script>
+      var clicky_site_ids = clicky_site_ids || [];
+      clicky_site_ids.push(100570585);
+      (function() {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//static.getclicky.com/js';
+      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
+    </script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100570585ns.gif" /></p></noscript>
+
+  </body>
+</html>
