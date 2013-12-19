@@ -1,5 +1,5 @@
 ---
-title: "Blog >> Client side call quality"
+title: "Blog >> Client-side call quality"
 layout: post
 ---
 
@@ -9,7 +9,7 @@ when network conditions are less than ideal.
 
 XXXXX
 
-## Client side call quality
+## Client-side call quality
 
 Building any VoIP client is difficult, and building a VoIP client for a mobile device introduces additional specialized 
 difficulties.  All VoIP solutions contend with packet switched networks that were not designed to transmit real-time media 
@@ -76,7 +76,7 @@ to find with a second process we hadn't been looking for.  This second process w
 more often than received latencies, and it operated over much longer timescales than we'd expected.
 
 In the data, we saw a device's data uplink would stop transmitting for a short period of time, sometimes only a dozen 
-milliseconds, sometimes a second or more.  When the device began transmitting packets again, the backlog of unset packets would 
+milliseconds, sometimes a second or more.  When the device began transmitting packets again, the backlog of unsent packets would 
 transmit in a rapid burst rather than being dropped entirely.  We're not certain what the root cause of this phenomenon is, but 
 temporary interference with the low-power uplink signal (rather than the high-power downlink signal) and power-saving behavior in 
 the radio hardware have been suggested as possible explanations.  

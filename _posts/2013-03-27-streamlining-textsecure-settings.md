@@ -27,14 +27,14 @@ At this point my knowledge of cryptography was (is) somewhat rudimentary. I
 knew basically what encryption was and how to use RSA key pairs for ssh, but I
 thought of encrypted SMS as more of a nerdy novelty than anything else. I
 figured it might be a practical precaution for activists, whistle-blowers, and
-rebel freedom fighters operating under and against oppressive goverments, or
-perhaps goverment agents operating in hostile foreign countries, but for 99% of
+rebel freedom fighters operating under and against oppressive governments, or
+perhaps government agents operating in hostile foreign countries, but for 99% of
 people I knew and 99% of their SMS conversations, surely this app would be, as
 they say, like wearing a tin foil hat.
 
 Now I see things differently. The truth is, even here in the so-called land of
 the free, we are constantly under surveillance, both passive and active, by our
-[goverment](http://www.aclu.org/spy-files), our
+[government](http://www.aclu.org/spy-files), our
 [corporations](https://www.eff.org/nsa/hepting), our
 [law enforcement](http://www.npr.org/2013/02/22/172696814/as-police-drones-take-off-washington-state-pushes-back),
 and [ourselves](http://www.huffingtonpost.com/steven-kurlander/domestic-surveillance-spy_b_2866085.html).

@@ -9,7 +9,7 @@ and tend to be oriented around the mobile environment.  We've been working on ap
 well-designed secure communication tools that are both privacy preserving *and* a joy to use.
 
 This winter, we'd like to invite you to join us for "Winter Break Of Code," a week-long free trip to Kauai for anyone
-who'd like to spend a week working on this type of easy to use privacy enhancing technology in a collaborative
+who'd like to spend a week working on this type of easy-to-use privacy-enhancing technology in a collaborative
 environment.  We've rented a large beachfront house on the north coast of Kauai for everyone to stay
 in, and we'll pay for your airfare.  While there, you can split your time between island living and working on an Open Whisper
 Systems related privacy project that you propose.
@@ -32,7 +32,7 @@ read more about it ([here](https://whispersystems.org/blog/dirigibles-chinese-ju
 
 ## The Details
 
-*Winter Break Of Code* will be **January 5th to January 12st, 2014**.  We've rented a large beachfront house in Hanalei, on
+*Winter Break Of Code* will be **January 5th to January 12th, 2014**.  We've rented a large beachfront house in Hanalei, on
 the north coast of Kauai, HI (within walking distance to a world class surf spot).  We will be taking up to eight people, and will 
 cover your costs for:
 
@@ -41,7 +41,7 @@ cover your costs for:
 -  A surfboard for the week.
 
 *Winter Break Of Code* is an opportunity for designers, developers, writers, strategists, and creative thinkers interested in privacy
-and security to spend some time contributing to privacy related projects in a retreat-like setting with other co-conspirators.
+and security to spend some time contributing to privacy-related projects in a retreat-like setting with other co-conspirators.
 Think of it as an extended hackathon, but with your travel expenses paid, and with breaks for surfing, hiking, swimming, and
 just generally being in Kauai.
 
@@ -82,7 +82,7 @@ To apply to *Winter Break Of Code*, send an email to **winterbreakofcode@whisper
 
 ## You should also know...
 
-We understand that it requires commitment in order to travel great distance and spend a week with people you 
+We understand that it requires commitment in order to travel a great distance and spend a week with people you 
 might not already know.  We'll work hard to ensure that the infrastructure is set up well in order to make 
 this week great, but we also want to set the framework for the expectations we believe we should have for 
 each other:

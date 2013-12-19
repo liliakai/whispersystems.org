@@ -68,7 +68,7 @@ fully Open Source.
 
 This effort marks the beginning of our transition to the data channel as a TextSecure transport, which should hopefully open up
 a host of ongoing opportunities.  With the [TextSecure iOS client](https://github.com/whispersystems/TextSecure-iOS) nearing 
-completion and a TextSecure browser extension about to get underway, soon we will have a truly cross platform
+completion and a TextSecure browser extension about to get underway, soon we will have a truly cross-platform
 seamless asynchronous messaging system built on open protocols and open source software, with an already massive user base.
 
 Cyanogen deserves enormous praise for their substantial commitment of time and resources to this development effort. Their

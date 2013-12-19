@@ -22,7 +22,7 @@ For us this primarily meant avoiding a complex registration process, and not doi
 sockets open to a server at all times (as a standard desktop-oriented VoIP client would do).
 
 Based on these and other design objectives, it was clear that we'd have to write our own switch, rather than using something like 
-Asterix or FreeSWITCH.  We didn't like their complexity, and we knew that we didn't need 9/10ths of the stuff in SIP.  Instead we 
+Asterisk or FreeSWITCH.  We didn't like their complexity, and we knew that we didn't need 9/10ths of the stuff in SIP.  Instead we 
 decided to [write our own](https://github.com/WhisperSystems/RedPhone/wiki/Signaling-Protocol) minimal signaling protocol 
 and use [push notifications](https://github.com/WhisperSystems/RedPhone/wiki/Signaling-Protocol#wiki-compressed) 
 (at first SMS, then eventually GCM when it was introduced) in order to initiate calls.
@@ -40,7 +40,7 @@ connecting clients.
 
 This was fine if the callers were in the same region as the server, but callers in other regions would have experienced high 
 latency.  If the switch was on the east coast of the US and both callers were in Germany, their traffic would have to travel 
-all the way across the Atlantic and back, adding a frustrating couple of hundred milliseconds latency to their conversation.
+all the way across the Atlantic and back, adding a frustrating couple of hundred milliseconds of latency to their conversation.
 
 What's more, if we only had a single switch, RedPhone service would have become entirely unavailable if that switch had gone 
 down for any reason (as servers are wont to do).
@@ -58,7 +58,7 @@ IP address.  Using the magic of anycast networking, clients connecting to that I
 instance of a RedPhone switch.  But that's difficult to setup, and doesn't work well for TCP-based connections, which is how 
 our signaling protocol operates.
 
-Instead we ended up using a DNS provider that allows us respond to DNS requests differently based on which region the DNS lookup 
+Instead we ended up using a DNS provider that allows us to respond to DNS requests differently based on which region the DNS lookup 
 went to.  Providers like these basically have a set of globally distributed DNS servers on their own anycast IP address, each of 
 which can be configured to return a different response to a DNS lookup.
 
@@ -110,7 +110,7 @@ switches in the UK.
 
 <img class="nice" src="/blog/images/multiconnect.png" />
 
-Knowing which DNS GSLB region to include a switch's IP address in easy: just bring up the switch, do the DNS resolution from that 
+Knowing which DNS GSLB region to include a switch's IP address in is easy: just bring up the switch, do the DNS resolution from that 
 switch, and see which region's response gets returned.  Add that switch's IP address to that region's response, and it's online.
 
 ### As A High Availability Strategy

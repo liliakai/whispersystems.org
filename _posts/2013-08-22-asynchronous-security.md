@@ -34,7 +34,7 @@ to as [Perfect Forward Secrecy](https://en.wikipedia.org/wiki/Perfect_forward_se
 
 ## Asynchronous Life
 
-OTR was designed for synchronous transports.  It works well for desktop IM clients, but is not well tailored for the
+OTR was designed for synchronous transports.  It works well for desktop IM clients, but is not well-tailored for the
 mobile environment, where a number of factors such as the OS process model, battery constraints, and network conditions
 have conspired to make mobile messaging systems asynchronous.
 
@@ -79,7 +79,7 @@ for two minutes, you just don't get the message.  This results in an awkward sce
 to communicate with each other need to somehow prearrange to both open the app simultaneously and keep it open for the duration
 of their conversation.
 
-On the other hand, iOS apps like Threema and the proposed Heml support asynchronous messaging, but do not provide forward 
+On the other hand, iOS apps like Threema and the proposed Heml.is support asynchronous messaging, but do not provide forward 
 secrecy.  Users have static public keys that are maintained by a server, which anyone else can query and encrypt to without
 having to engage in a key exchange round trip to the user.  This allows for the frictionless asynchronous experience that 
 mobile users have come to expect, but unfortunately relies on an undesirable cryptographic protocol model (the PGP model) 

@@ -22,7 +22,7 @@ to a recipient are encrypted with the same public key over and over again, OTR u
 feature of any modern secure protocol, because otherwise a network adversary who records (potentially years of) ciphertext traffic
 can later decrypt *all of it* if they manage to 
 [later compromise the one key that was used](http://www.thoughtcrime.org/blog/lavabit-critique/).
-By contract, with ephemeral key exchanges, there is no key to compromise in the future (since the keys are only ephemerally 
+By contrast, with ephemeral key exchanges, there is no key to compromise in the future (since the keys are only ephemerally 
 in memory for a short time), so any recorded ciphertext should remain private.
 
 Simply doing an ephemeral key exchange at the beginning of a session is enough to provide this property, but OTR takes things
