@@ -11,5 +11,5 @@ Installing:
 ```
 $ gem install jekyll
 $ gem install jekyll-assets
-$ jekyll --serve
+$ jekyll serve
 ```
