@@ -9,6 +9,7 @@ The site is constructed using [jekyll](http://jekyllrb.com/) and the [jekyll-ass
 Installing:
 
 ```
+$ gem install json    # optional if using ruby 1.9 or higher
 $ gem install jekyll
 $ gem install jekyll-assets
 $ jekyll serve
