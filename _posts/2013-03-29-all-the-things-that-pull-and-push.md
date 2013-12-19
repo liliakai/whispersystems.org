@@ -32,7 +32,7 @@ all very unspeakable and horrifying.
 
 In times like these, it's hard to be serious. The schizophrenic dance between the panic-inducing terror of the consequences 
 of modern life, and the horrific pleasantness of modern life itself can really erode one's psyche. As difficult as seriousness 
-is, it can be even harder to be *absurd*. Here we are, trying to make "a new normal"; trying to make phone calls and SMS's 
+is, it can be even harder to be *absurd*. Here we are, trying to make "a new normal"; trying to make phone calls and SMSs 
 more secure, not as some self-interested career decision, but as an open-source project: a sort of volunteerism to force 
 others to adopt these standards for their communication apps. Our group is part entrepreneur and part anarchist, our labor 
 is part social work, part social war ... when I think about it, it's completely absurd. 
@@ -44,7 +44,7 @@ work, as with most open-source projects, cannot be engineered from the terrace o
 of seriousness *and* absurdity that a great work of satire is made. 
 
 Personally, I've tried to live according to that principle -- right now, I'm a high-school dropout sitting amongst current 
-and former employees of Twitter, an MIT-educated theoretical physicist, globe-trotting journalists, renown mathematicians, 
+and former employees of Twitter, an MIT-educated theoretical physicist, globe-trotting journalists, renowned mathematicians, 
 and emerging prodigy developers. I'm always deprecating my own qualifications (damn you, scandi-minnesotan morality), but the 
 truth is I've barely survived a very real sequence of mishaps in the world of anarchist-influenced creative- and 
 [knowledge-based work](http://en.wikipedia.org/wiki/Knowledge_worker) that have spanned a decade of more than a dozen 
@@ -80,18 +80,18 @@ little more complicated on OS X 10.8 than on previous versions of Apple's operat
 
 I've been using Iconfactory's suite of design tools, [xScope](http://xscopeapp.com/), for years now. If you do design work 
 in OS X, give it a try. When I first got it, it totally changed how I designed, and what I was capable of doing -- setting 
-screen-wide guides *a la* photoshop, copying the color of a single pixel via loupe, a device-specific overlay window framing 
+screen-wide guides *a la* Photoshop, copying the color of a single pixel via loupe, a device-specific overlay window framing 
 your design, an x-y pixel ruler for measuring the distance between objects of a different color, etc. In a recent update, 
 they added support for many different forms of mirroring on-screen work to a iOS device. This feature has proved indispensable 
 in that it enables real-time retina testing on my phone, so I can get immediate feedback regarding changes to the pixel-perfect 
-photoshop mockup of TextSecure's interface. Here's how to do it:
+Photoshop mockup of TextSecure's interface. Here's how to do it:
 
 1. Spring for xScope, you'll thank me later.
 2. Launch the app, and navigate to `Preferences > Mirror > "Allow iOS Devices on Local Network to Connect with deny/allow prompt"`.
 3. Launch Photoshop. Navigate to `Edit > Remote Connections ...`, choose a password and enable a remote connection.
 5. Enter this password in the mirror tab of xScope's preferences.
 6. Install the free [xScope mirror app](https://itunes.apple.com/app/xscope-mirror/id488819289) on your iOS device, and launch it. 
-7. On the iOS device with the xScope mirror, just select your computer and allow the connection when prompted in OS X. From there you can choose to view the screen (to compare windows), the clipboard, the area around your cursor, or the photoshop document itself. This is especially convenient because it is otherwise impossible to preview a pixel-for-pixel mockup at 100% on most non-retina laptops, because the retina display on the iPhone has more vertical pixels than most displays.
+7. On the iOS device with the xScope mirror, just select your computer and allow the connection when prompted in OS X. From there you can choose to view the screen (to compare windows), the clipboard, the area around your cursor, or the Photoshop document itself. This is especially convenient because it is otherwise impossible to preview a pixel-for-pixel mockup at 100% on most non-retina laptops, because the retina display on the iPhone has more vertical pixels than most displays.
 
 <img src="/blog/images/waves.png" class="nice" />
 

@@ -3,7 +3,7 @@ title: "Blog >> Spring Break Of Code"
 layout: post
 ---
 
-This Spring will be the first Open Whisper Systems *Spring Break Of Code*, a week-long expenses-paid retreat to
+This Spring will be the first Open Whisper Systems *Spring Break Of Code*, a week-long, expenses-paid retreat to
 Maui for folks who like software development, security, and the beach.  We've rented a large beachfront house on 
 the west coast of Maui for everyone to stay in, and will pay for your airfare.  While there, you can split your 
 time between island living and working on an Open Whisper Systems related project that you propose.
@@ -46,7 +46,7 @@ To apply to *Spring Break Of Code*, send an email to **springbreakofcode@whisper
   1. Working on anything for our website.
   1. Adding "push to talk" functionality to RedPhone.
   1. Developing RedPhone distributed call quality measurement and analytics.
-  1. Adding a data based (non-SMS) channel to TextSecure.
+  1. Adding a data-based (non-SMS) channel to TextSecure.
   1. Writing an application-level multi-master database replication solution for RedPhone master switches.
   1. A plan for iOS TextSecure integration.
   1. A plan for TextSecure identity key management.
@@ -60,7 +60,7 @@ To apply to *Spring Break Of Code*, send an email to **springbreakofcode@whisper
 
 ## You should also know...
 
-We understand that it requires commitment in order to travel great distance and spend a week with people you 
+We understand that it requires commitment in order to travel a great distance and spend a week with people you 
 might not already know.  We'll work hard to ensure that the infrastructure is set up well in order to make 
 this week great, but we also want to set the framework for the expectations we believe we should have for 
 each other:

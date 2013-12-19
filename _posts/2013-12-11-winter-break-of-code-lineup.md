@@ -16,7 +16,7 @@ XXXXX
 <img alt="Rhodey" src="/blog/images/rhodey-wboc.png" class="nice-left"/>
 **Rhodey** ([@notrhodey](https://twitter.com/notrhodey)) space, privacy, robits and the cheaper things in life. I plan 
 to spend WBoC working on Secure Sync, a contact and calendar synchronization service for Android featuring end-to-end
-encryption. I also hope to prepare "Zones" for release on Google Play by closing what it left of the GitHub issues and 
+encryption. I also hope to prepare "Zones" for release on Google Play by closing what is left of the GitHub issues and 
 polishing other bits.
 
 <p style="clear: both;"/>
@@ -32,7 +32,7 @@ of TextSecure iOS and her surfing technique.
 <img alt="Meskio" src="/blog/images/meskio-wboc.jpg" class="nice-left"/>
 **Meskio** ([meskio](http://meskio.net)) I'm a computer geek interested on the possibilities that new technologies bring 
 to empower people. I love to learn programming languages and develop free software. I've being working for the past two 
-years at CERN (Geneva, switzerland) as a C++ developer in the control system of the accelerators. I'm a maniac of mountains 
+years at CERN (Geneva, Switzerland) as a C++ developer in the control system of the accelerators. I'm a maniac of mountains 
 and traveling, going to remote places searching for new routes to climb. At the WBoC I'll be working on adding OpenStreetMap 
 support to Zones and squashing bugs on TextSecure.
 
@@ -50,7 +50,7 @@ proprietary software.
 <p style="clear: both;"/>
 
 <img alt="Matt Corallo" src="/blog/images/matt-wboc.jpg" class="nice-left" />
-**Matt Corallo** Matt is a senior Computer Science student at UNC. He has been developer on the Bitcoin Core client 
+**Matt Corallo** Matt is a senior Computer Science student at UNC. He has been a developer on the Bitcoin Core client 
 (the most popular Bitcoin client) for over two years and the bitcoinj library (the most popular library which
 powers the top mobile client and several desktop clients) for over a year. His research interests include software 
 mechanisms for protecting systems against physical attacks and practical secure systems. During the WBoC, Matt will be 
@@ -67,7 +67,7 @@ improve access to & delivery of services and information. Through this work expe
 around human rights, freedom of expression and digital security.
 
 Meghana's primary goal for the week will be understanding Open WhisperSystems' mission, audience & brand attributes, the 
-market(s) it belongs, its competitors and collaborators and the desired perception & image within those groups. All this 
+market(s) to which it belongs, its competitors and collaborators and the desired perception & image within those groups. All this 
 will inform Open WhisperSystems' new branding, website design, and communication strategy. If time permits, that work could 
 influence aspects of TextSecure and RedPhone design and user experience as well. 
 
@@ -85,7 +85,7 @@ security. Beyond that, hopping around, learning, contributing, falling into wate
 
 <img alt="Lilia" src="/blog/images/lilia-wboc.jpg" class="nice-left"/>
 **Lilia Kai** ([@liliakai](https://twitter.com/liliakai)) As a web developer for the EFF, and given my laser-enhanced 20/15 
-visual acuity, I'm pretty much a superhero. Other hats I've worn include arduino hacker, duck farmer, and pro yoyoer. 
+visual acuity, I'm pretty much a superhero. Other hats I've worn include Arduino hacker, duck farmer, and pro yoyoer. 
 This winter break I'll be using my superpowers to ensure that no matter what device, browser, search engine, or screen 
 size you prefer, the Open WhisperSystems website is always looking good!
 

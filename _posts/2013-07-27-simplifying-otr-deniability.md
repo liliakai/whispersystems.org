@@ -81,7 +81,7 @@ keys (and if they had those, they would be able to calculate the MAC keys anyway
 
 What's more, since the initial OTR key exchange is signed and transmitted through an unobservable channel (an "outer" ephemeral
 key exchange), it's not actually possible for *anyone* to produce what appears to be a conversation with you.  Only people you've
-*actually* had a conversation with are in posession of a signed ephemeral key from you, and are thus the only ones capable of 
+*actually* had a conversation with are in possession of a signed ephemeral key from you, and are thus the only ones capable of 
 producing plaintext messages attributed to you.  Publishing old plaintext MAC keys in the clear does not substantially increase
 this set of people's ability to forge messages from you, since they are already in possession of the MAC keys.
 
