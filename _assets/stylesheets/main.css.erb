@@ -447,13 +447,13 @@ ul.features li a.active {
 }
 
 @media screen and (min-width: 40.5em) {
-  #encrypted_voice .carousel-container {
+  #encrypted_voice .carousel-frame {
     float: left;
-    padding-right: 50px;
+    margin-right: 50px;
   }
-  #encrypted_texts .carousel-container {
+  #encrypted_texts .carousel-frame {
     float: right;
-    padding-left: 50px;
+    margin-left: 50px;
   }
 }
 
@@ -515,12 +515,16 @@ pre {
  * Carousel 
  ***********/
 
+.carousel-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 .carousel-frame { 
   background-repeat: no-repeat;
   /* default to a RedPhone phone image */
   background-image: url(<%= asset_path "body/full_device.png" %>);
-  padding: 94px 31px;
+  padding: 94px 57px;
   width: 258px; /* width of the screenshots */
   background-position: center;
   margin: -5px auto 2em auto;
