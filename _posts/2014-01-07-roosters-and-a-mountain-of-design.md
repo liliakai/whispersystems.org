@@ -7,7 +7,7 @@ layout: post
 
 <img src="/blog/images/jake-wboc-pier.jpg" class="nice" />
 
-The Winter Break of Code, being closely linked by name to the season of Winter, began with a calm trickle of ex{hausted,cited} people carrying laptops and cell phone collections after a parade of delays and weather issues. Off the plane after a pitch black descent, the humid fresh smell distinct to this place along with my feet landing on soil was a good hint that we were indeed on an island and this was actually happening. It was very welcome.
+The [Winter Break of Code](/blog/winter-break-of-code), being closely linked by name to the season of Winter, began with a calm trickle of ex{hausted,cited} people carrying laptops and cell phone collections after a parade of delays and weather issues. Off the plane after a pitch black descent, the humid fresh smell distinct to this place along with my feet landing on soil was a good hint that we were indeed on an island and this was actually happening. It was very welcome.
 
 XXXXX
 
