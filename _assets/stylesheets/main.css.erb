@@ -11,16 +11,16 @@ body {
 #container {
   background-color: #fff; 
   margin: 0 auto;
-  min-width: 1140px;
-  /* max-width: 1500px; */
 }
 
 .container { 
- /* min-width: 1140px; 
-  max-width: 1500px; */
-  width: 1140px;
-  margin: 0 auto !important;
-  padding: 0 !important;
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1140px;
+}
+
+.container.thin {
+  max-width: 900px;
 }
 
 
@@ -79,17 +79,14 @@ body {
 }
 
 .bar {
-  height: 79px;
   position: relative;
-  width: 1140px;
   margin: 0 auto;
 }
 .bar ul {
+  float: right;
   margin: 0;
+  padding: 0;
   list-style: none;
-  position: absolute;
-  top: 5px;
-  right: 20px;
 }
 .bar li {
   float: left;
@@ -135,21 +132,21 @@ body {
 
 .main-head {
   background-color: #171717;
-  min-width: 1140px;
 }
 .header-graphics {
   overflow: visible;
-  width: 420px;
-  height: 19px;
   z-index: 10;
   position: relative;
-  margin-left: 40px;
-  vertical-align: top;
 }
+#raven-logo {
+  float: left;
+  width: 17%;
+  max-width: 154px;
+  margin-right: 1em;
+}
+#raven-logo img { width: 100%; }
+#text-logo, #text-logo img { display: block; }
 .header-graphics a { text-decoration: none; }
-.header-graphics img {
-  vertical-align: top;
-}
 
 #telephone {
   background-color: #696969;
@@ -166,7 +163,6 @@ body {
   margin-top: 0;  /* if this is not here, messes up bar size above. */
   padding-top: 160px;
   text-align: right;
-  width: 1140px;
   margin: 0 auto;
 }
 #telephone .tagline1 {
@@ -192,29 +188,16 @@ body {
 
 .solutions {
   color: white;
-  height: 100px;
-  padding-left: 100px;
   position: relative;
+  text-align: center;
 }
 .solutions p {
-  padding-left: 360px;
-  float: left;
+  display: inline-block;
   font-size: 28px;
   color: #ddd;
   font-family: 'BitterRegular', serif;
 /*  font-family: 'Merriweather', serif; */
-}
-.solutions .mobileicons {
-  position: absolute;
-/*  top: 50px;*/
-  top: 15px;
-  right: 260px;
-}
-
-.solutions .spacer {
-    position: absolute;
-  top: 15px;
-  right: 565px;
+  text-align: center;
 }
 
 /**********
@@ -222,20 +205,12 @@ body {
  **********/
 
 #blog {
-  clear: both;
-  background-image: url(<%= asset_path "body/black_down_arrow.png" %>);
-  background-repeat: no-repeat;
-  background-position: 150px 0;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
   min-height: 431px;
+  max-width: 760px;
 }
 
-#blog #title {
-  margin-left: 140px;
-}
+#blog .arrow { float: left; }
 
 #blog #title h2 {
   margin: 0px;
@@ -287,10 +262,8 @@ body {
 }
 
 #blog article {
-  margin-left: 140px;
   font: 100%/1.5em 'Nobile';
   font-weight: normal;
-  padding-right: 100px;
 /*  margin-left: 200px;*/
 }
 
@@ -375,7 +348,6 @@ ul.social-buttons li{
 #main article { 
   clear: both;
   padding: 60px 0 40px 0;
-  min-width: 1140px;
 }
 #main article h2 {
   color: #333;
@@ -398,19 +370,13 @@ ul.social-buttons li{
   font-family: 'OpenSansSemibold', Helvetica, Arial, sans-serif;
 }
 
-.checkpoints { 
-  width: 60%;
-  float: left; 
-  padding-left: 30px;
-}
 .checkpoint {
   color: #555;
   background-image: url(<%= asset_path "body/checkmark.png" %>);
   background-repeat: no-repeat;
   padding-left: 100px;
-  height: 70px;
-  margin-bottom: 60px;
   margin-top: 20px;
+  min-height: 79px;
 }
 .checkpoint h4 { 
   font-size: 22px;
@@ -426,10 +392,16 @@ ul.social-buttons li{
   font-size: 16px;
 }
 
-#privacy { height: 500px; }
-#privacy .illustration { 
-  float: right; 
-  margin-right: 10px; 
+#privacy .illustration {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 40.5em) {
+  #privacy .illustration {
+    float: right;
+    padding-left: 50px;
+  }
 }
 
 .striped {
@@ -446,23 +418,19 @@ ul.social-buttons li{
 ul.features {
   list-style: none;
   color: #555;
-  padding-top: 10px;
-  width: 300px;
+  padding: 1em 0;
 }
 
 ul.features li {
   display: block;
-  padding: 12px 25px;
-  margin-right: 10px;
-  width: 380px;
-  float: left;
-  position: relative;
+  padding: 12px 0;
 }
 
 ul.features li a {
   text-decoration: none;
   color: inherit;
   opacity: 0.7;
+  vertical-align: middle;
 }
 
 ul.features li a.active {
@@ -474,65 +442,19 @@ ul.features li a.active {
   position: relative;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  height: 850px;
 }
 
-#encrypted_voice h3 {
-  padding-left: 220px;
-  padding-right: 220px;
+@media screen and (min-width: 40.5em) {
+  #encrypted_voice .carousel-frame {
+    float: left;
+    margin-right: 50px;
+  }
+  #encrypted_texts .carousel-frame {
+    float: right;
+    margin-left: 50px;
+  }
 }
 
-#encrypted_voice .carousel-container {
-  width: 585px;
-  position: absolute;
-  right: 50%;
-  bottom: 0;
-  height: 50px;
-  /*background-color: red; */
-}
-#encrypted_voice .carousel-frame {
-  position: absolute;
-  bottom: -75px;
-}
-
-
-#encrypted_voice ul.features { margin-left: 550px; }
-#encrypted_voice .buttons { margin-left: 550px; }
-
-#encrypted_texts { 
-  height: 850px; 
-  position: relative;
-}
-
-#encrypted_texts h3 {
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-#encrypted_texts ul.features {
-  margin-left: 190px;
-  margin-right: 100px;
-}
-
-#encrypted_texts .carousel-container {
-  position: absolute;
-  width: 550px;
-  bottom: 0;
-  left: 50%;
-/*  height: 50px;*/
-  /* background-color: red; */
-}
-
-#encrypted_texts .carousel-frame {
-  position: absolute;
-  left: 240px;
-  bottom: -50px;
-}
-
-#encrypted_texts .buttons {
-  margin-left: 190px;
-  width: 500px;
-}
 
 #bottom {
   padding-top: 50px;
@@ -545,6 +467,8 @@ ul.features li a.active {
   background-repeat: no-repeat;
   background-position: center -1px;
 }
+
+#twitter-widget-0 { vertical-align: middle; }
 
 /**** code blocks ****/
 
@@ -589,33 +513,24 @@ pre {
  * Carousel 
  ***********/
 
+.carousel-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .carousel-frame { 
   background-repeat: no-repeat;
   /* default to a RedPhone phone image */
   background-image: url(<%= asset_path "body/full_device.png" %>);
-  width: 400px;
-  padding-left: 31px;
-  padding-top: 70px;
-  margin-left: 150px;
+  padding: 94px 57px;
+  width: 258px; /* width of the screenshots */
+  background-position: center;
+  margin: -5px auto 2em auto;
 }
 .carousel { margin-bottom: 0; overflow: hidden; }
-.carousel, .carousel img {  margin-left: 20px; margin-top: 40px; }
-.carousel-inner { width: 290px; height: 699px; }
+.carousel { margin-top: 12px; }
 .carousel .item { overflow: hidden; }
 a.carousel-control { text-decoration: none; }
-
-#textsecure_carousel_frame { 
-  /* override the redphone image with the textsecure phone image */
-  background-image: url(<%= asset_path "body/full_device.png" %>);
-  /* textsecure image has slightly different dimensions */
-  padding-left: 29px;
-  padding-top: 74px;
-  margin-left: -150px;
-}
-#textsecure_carousel_frame .carousel, 
-#textsecure_carousel_frame .carousel img { /*width: 274px;*/ }
-#textsecure_carousel_frame .carousel .carousel-inner { /*height: 305px;*/ height: 699px; }
 
 /*********
  * Icons
@@ -625,11 +540,10 @@ i.icon {
   background-image: url(<%= asset_path "body/icons.png" %>);
   background-repeat: no-repeat;
   display: inline-block;
-  position: absolute;
-  top: 12px;
-  left: -20px;
   width: 30px; 
   height: 30px;
+  float: left;
+  margin-right: 1em;
 }
 
 /* red icons -- 30px wide */
@@ -670,8 +584,7 @@ i.icon.cell {
 
 .rss {
   float: right;
-  margin-right: 120px;
-  margin-top: 40px;
+  margin: 1em;
   opacity: 0.5;
 }
 

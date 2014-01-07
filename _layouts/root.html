@@ -50,30 +50,30 @@
     <div id="wrap">
       <div id="container">
         <header class='main-head'>
-          <nav class='topnav bar'>
+          <nav class='topnav bar container'>
             <div class='header-graphics'>
-              <a href='/'>
-                <img class='bird' alt='Raven Logo' src="{% asset_path header/raven.png %}" width='154' height='181'>
+              <ul>
+                <li><a href="/">About Us</a></li>
+                <li><a class='scroll' href="/#privacy">Our Apps</a></li>
+                <li><a href="/blog/">The Blog</a></li>
+  <!--
+                <li><a title='Facebook' class='facebook' href="#">Facebook</a></li>
+  -->
+                <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
+              </ul>
+              <a href='/' id='raven-logo'>
+                <img class='bird' alt='Raven Logo' src="{% asset_path header/raven.png %}">
               </a>
-              <a href='/'>
+              <a href='/' id='text-logo'>
                 <img class='whisper' alt="Whisper Systems" src="{% asset_path header/whispersystems.png %}" width="243" height="79">
               </a>
             </div>
 
-            <ul>
-              <li><a href="/">About Us</a></li>
-              <li><a class='scroll' href="/#privacy">Our Apps</a></li>
-              <li><a href="/blog/">The Blog</a></li>
-<!--
-              <li><a title='Facebook' class='facebook' href="#">Facebook</a></li>
--->
-              <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
-            </ul>
           </nav>
 
           {% if page.header == true %}
             <div id="telephone">
-              <div class='text'>
+              <div class='text container'>
                 <p class='tagline1'>Security, simplified.</p> <!-- ".tagline1" and ".tagline2" could probably be changed to be clearer -->
                 <p class='tagline2'><strong>Open Source</strong> security for mobile devices.</p>
               </div>
@@ -81,15 +81,13 @@
 
             <div class='container solutions'> <!-- .solutions is not really a semantic description. -->
               <p>Get started.</p>
-              <img class='spacer' src="{% asset_path header/spacer.png %}">
-              <img class='mobileicons' src="{% asset_path header/mobile.png %}" alt="Mobile Icons">
             </div>
           {% endif %}
         </header>
 
         {{ content }}
 
-        <section id='bottom'> <!-- text in #bottom needs to be in semantic HTML elements -->
+        <section id='bottom'>
           Stay in touch,
           <a href="https://twitter.com/whispersystems" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false"> Follow @whispersystems </a> on Twitter.
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -108,6 +106,7 @@
               </ul>
             </nav>
           </footer>
+          <div class='clearfix'></div>
         </div>
       </div> <!-- /container -->
     </div> <!-- /wrap -->
