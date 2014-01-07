@@ -39,7 +39,7 @@ A cleaner design for all of your meaningful conversations.
 
 ## Even more
 
-We have some other nicities coming up to help bring in the new day of TextSecure, including but not limited to:
+We have some other niceties coming up to help bring in the new day of TextSecure, including but not limited to:
 
 * Performance improvements (cut nearly half a second off the cold startup time in most cases)
 * Mnemonic fingerprints to easily and conveniently relay your identity and fight against MITM attacks
@@ -48,7 +48,7 @@ We have some other nicities coming up to help bring in the new day of TextSecure
 
 ## Future
 
-The weeks off to a good start and you, dear reader, can look forward to many more exciting updates throughout it from the other participants. There's much work to be done before this gets pushed, and it's time to get back to that.
+The week is off to a good start and you, dear reader, can look forward to many more exciting updates throughout it from the other participants. There's much work to be done before this gets pushed, and it's time to get back to that.
 
 [jake](https://twitter.com/clpwn)
 
