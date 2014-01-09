@@ -52,15 +52,7 @@
         <header class='main-head'>
           <nav class='topnav bar container'>
             <div class='header-graphics'>
-              <ul>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/apps">Our Apps</a></li>
-                <li><a href="/blog/">The Blog</a></li>
-  <!--
-                <li><a title='Facebook' class='facebook' href="#">Facebook</a></li>
-  -->
-                <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
-              </ul>
+              {% include nav.html %}
               <a href='/' id='raven-logo'>
                 <img class='bird' alt='Raven Logo' src="{% asset_path header/raven.png %}">
               </a>
@@ -99,13 +91,7 @@
           <footer class='bar'>
             <p class='notice copyright'>&copy; 2013 WhisperSystems &mdash; info@whispersystems.org</p>
             <nav class='botnav'>
-              <ul>
-                <li><a href="/">About Us</a></li>
-                <li><a class='scroll' href="/#privacy">Our Apps</a></li>
-                <li><a href="/blog/">The Blog</a></li>
-<!--                <li><a title='Facebook' class='facebook' href="#">Facebook</a></li> "Is this removed permanently? If so, delete! -->
-                <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
-              </ul>
+              {% include nav.html %}
             </nav>
           </footer>
           <div class='clearfix'></div>
