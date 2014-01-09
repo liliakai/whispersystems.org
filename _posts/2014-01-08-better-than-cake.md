@@ -3,6 +3,8 @@ title: "Blog >> Better than cake"
 layout: post
 ---
 
+*A guest post by [lilia](https://twitter.com/liliakai). Winter Break of Code, Day Two*
+
 By all rights, I should not be here. My application was last-minute to say the
 least, and little more than a casual note that I'd be down to reprise my role
 from SBoC as web hacker for whispersystems.org. Maybe it was because of my work
@@ -44,3 +46,10 @@ There wasn't any cake, but it didn't matter, because I really couldn't have
 asked for a nicer day.
 
 <img src="/blog/images/lilia-wboc-hanalei.png" class="nice" />
+
+[lilia](https://twitter.com/liliakai)
+
+Kauai, Hawaii
+
+8 January 2014
+
