@@ -1,0 +1,42 @@
+.tabbed {
+  text-align: center;
+
+  ul.tabs {
+    padding: 0;
+
+    li {
+      display: inline-block;
+      color: #555;
+      font-family: 'OpenSansLight', Helvetica, Arial, sans-serif;
+      font-size: 1.3em;
+
+      &:not(:last-child):after {
+        content: "·";
+        padding: 0 0.5em;
+      }
+
+      &.selected { font-weight: bold; }
+    }
+  }
+
+  section {
+    display: none;
+    background-color: #eeeeee;
+    border: 1px solid #dedede;
+    padding: 2em 3em;
+    max-width: 900px;
+    text-align: left;
+    margin: auto;
+
+    &.selected { display: block; }
+
+    p { margin-top: 0; }
+
+    img {
+      float: left;
+      width: 40%;
+      max-width: 200px;
+      padding: 0 5% 5% 0;
+    }
+  }
+}
