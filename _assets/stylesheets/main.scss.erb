@@ -29,7 +29,14 @@ body {
 .light { font-family: 'OpenSansLight', Helvetica, Arial, sans-serif; }
 .red { color: #be4a4a; }
 .green { color: #64902a; }
-.clearfix { clear: both; }
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 .buttons { margin-top: 20px; }
 
