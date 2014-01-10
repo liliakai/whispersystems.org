@@ -1,4 +1,4 @@
-/* http://www.responsivegridsystem.com/ */
+/* Grids from http://www.responsivegridsystem.com/ */
 
 .row {
   clear: both;
@@ -75,4 +75,12 @@
   .span_1_of_2 {
     width: 100%;
   }
+}
+
+
+/* Site-specific stuff for gridded content */
+.col img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
