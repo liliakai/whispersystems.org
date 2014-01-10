@@ -4,15 +4,15 @@ title: Blog
 ---
 
 {% for post in site.posts %}
-  <article class="container snippet">
+  <article class='container snippet'>
     {% assign title_parts = post.title | split: ' >> ' %}
-    <h2><a href="{{ post.url }}">{{ title_parts[1] }}</a></h2>
-    <h3 class="date">{{ post.date | date_to_string }}</h3>
+    <h2><a href='{{ post.url }}'>{{ title_parts[1] }}</a></h2>
+    <h3 class='date'>{{ post.date | date_to_string }}</h3>
     <p>
       {% assign parts = post.content | split: 'XXXXX' %}
       {{ parts.first }}
       {% if parts[1] %}
-      <a href="{{ post.url }}"><em>Read more...</em></a>
+      <a href='{{ post.url }}'><em>Continue reading &#133; </em></a>
       {% endif %}
     </p>
   </article>
