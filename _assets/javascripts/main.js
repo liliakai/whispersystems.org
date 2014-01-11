@@ -71,5 +71,18 @@ jQuery(function($) {
       $('#textsecure_carousel').carousel({interval: false});
     }
   });
+
+  $(".tabbed").bind('click', function(e) {
+    var $target = $(e.target);
+    var $this = $(this);
+    if (!$target.is('selected')) {
+      $('.selected', this).removeClass('selected');
+      $target.addClass('selected');
+
+      var $sections = $('section', $this);
+      $('.selected', $sections).removeClass('selected');
+      var $next = $($sections[$target.index()]).addClass('selected');;
+    }
+  });
 });
 
