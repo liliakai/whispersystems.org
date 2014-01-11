@@ -1,0 +1,21 @@
+---
+layout: root
+---
+<nav id='sub_nav'>
+  <a href='/developers'
+    {% if page.selected == 'technology' %}
+    class='selected'
+    {% endif %}
+    >Technology</a>
+  <a href='/developers/labs'
+    {% if page.selected == 'labs' %}
+    class='selected'
+    {% endif %}
+    >Whisper Labs</a>
+  <a href='/developers/contribute'
+    {% if page.selected == 'contribute' %}
+    class='selected'
+    {% endif %}
+    >Contribute</a>
+</nav>
+{{ content }}
