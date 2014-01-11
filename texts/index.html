@@ -1,21 +1,22 @@
 ---
-layout: root
-title: TextSecure
+layout: apps
+title: Secure text messaging
+selected: texts
 ---
 
 <div id='main'>
   <article>
     <div class='container'>
-      <hgroup class='container'>
-        <h1>Secure text messaging</h1>
-        <h2>Encrypt your text messages</h2>
-        <h3> It's almost identical to the normal text messaging application,
-             and is just as easy to use.
-        </h3>
-      </hgroup>
+      <h1>Secure text messaging</h1>
+      <h2>Encrypt your text messages</h2>
+      <h3> It's almost identical to the normal text messaging application,
+            and is just as easy to use.
+      </h3>
       <section>
         <div class='buttons'>
-          {% include text-secure-button.html %}
+          <div>
+            {% include text-secure-button.html %}
+          </div>
         </div>
       </section>
     </div>
@@ -92,15 +93,18 @@ title: TextSecure
           <div class='row group'>
             <div class='col span_1_of_3'>
               <img src='{% asset_path screens/textsecure_conversationlist.png %}'>
+              <h3>Your contacts</h3>
               <p> A full replacment for the default text messaging application.
             </div>
             <div class='col span_1_of_3'>
               <img src='{% asset_path screens/textsecure_passphrase.png %}'>
+              <h3>Your conversations</h3>
               <p> All messages are encrypted locally, so if your phone is lost,
                   your messages will be safe.
             </div>
             <div class='col span_1_of_3'>
               <img src='{% asset_path screens/textsecure_upgrade.png %}'>
+              <h3>Secure</h3>
               <p> Messages to other TextSecure users are encrypted over the
                   air, protecting your communication in transit.
             </div>
@@ -110,9 +114,8 @@ title: TextSecure
     </div>
 
     <div class='buttons'>
-    
+      <h2>Download TextSecure on Google Play</h2>
       {% include text-secure-button.html %}
-    
     </div>
   
   </article>

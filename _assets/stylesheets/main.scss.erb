@@ -619,3 +619,22 @@ i.icon.cell {
   padding-bottom: 30px;
   width: 720px;
 }
+
+#apps_nav {
+  @include lato();
+  font-weight: bold;
+  background-color: #29b472;
+  text-align: center;
+  border-bottom: 5px solid #D8EADB;
+
+  a, a:visited {
+    color: #D8EADB;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+
+    &.selected {
+      color: #ffffff;
+    }
+  }
+}
