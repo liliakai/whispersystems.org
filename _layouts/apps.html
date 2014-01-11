@@ -1,0 +1,16 @@
+---
+layout: root
+---
+<nav id='apps_nav'>
+  <a href='/texts'
+    {% if page.selected == 'texts' %}
+    class='selected'
+    {% endif %}
+    >Send text messages</a>
+  <a href='/calls'
+    {% if page.selected == 'calls' %}
+    class='selected'
+    {% endif %}
+    >Make voice calls</a>
+</nav>
+{{ content }}
