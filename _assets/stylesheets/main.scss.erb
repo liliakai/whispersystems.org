@@ -35,8 +35,6 @@ body {
  * General  Styles
  ********************/
 
-.red { color: #be4a4a; }
-.green { color: #64902a; }
 .clearfix:after {
   content: ".";
   display: block;
@@ -148,64 +146,7 @@ header {
   }
 }
 
-.main-head {
-  background-color: #171717;
-}
-.header-graphics {
-  overflow: visible;
-  z-index: 10;
-  position: relative;
-}
 #text-logo, #text-logo img { display: block; }
-.header-graphics a { text-decoration: none; }
-
-#telephone {
-  background-color: #696969;
-  text-align: right;
-  background-image: url(<%= asset_path "header/telephone.png" %>);
-  background-repeat: no-repeat;
-  position: relative;
-  width: 100%;
-  background-size: auto 100%;   /* cover */
-  background-position: center;
-  height: 480px;
-  @include montserrat();
-}
-#telephone .text {
-  margin-top: 0;  /* if this is not here, messes up bar size above. */
-  padding-top: 160px;
-  text-align: right;
-  margin: 0 auto;
-}
-#telephone .tagline1 {
-  padding: 0 20px 0 0;
-  margin: 0;
-  margin-top: 30px;
-  color: white;
-  font-size: 48px;
-}
-#telephone .tagline2 {
-  padding: 0 20px 0 0;
-  margin: 0;
-  margin-top: 10px;
-  color: #eee;
-  font-size: 22px;
-}
-#telephone .tagline2 strong {
-  font-weight: normal;
-}
-
-.solutions {
-  color: white;
-  position: relative;
-  text-align: center;
-}
-.solutions p {
-  display: inline-block;
-  font-size: 28px;
-  color: #ddd;
-  text-align: center;
-}
 
 /**********
  * Body
@@ -382,91 +323,6 @@ ul.social-buttons li{
   max-width: 600px;
   margin: 0 auto;
 }
-
-.checkpoint {
-  color: #555;
-  background-image: url(<%= asset_path "body/checkmark.png" %>);
-  background-repeat: no-repeat;
-  padding-left: 100px;
-  margin-top: 20px;
-  min-height: 79px;
-}
-.checkpoint h4 {
-  font-size: 22px;
-  font-weight: normal;
-  margin: 0;
-}
-.checkpoint h4 strong {
-  font-weight: normal;
-}
-.checkpoint p {
-  margin: 5px 0;
-  font-size: 16px;
-}
-
-#privacy .illustration {
-  display: block;
-  margin: auto;
-}
-
-@media screen and (min-width: 40.5em) {
-  #privacy .illustration {
-    float: right;
-    padding-left: 50px;
-  }
-}
-
-.striped {
-  background-image: url(<%= asset_path "body/texture.png" %>);
-  background-color: #eee;
-  border-top: 1px dashed #ddd;
-  border-bottom: 1px dashed #ddd;
-}
-#encrypted_texts .striped {
-  background-image: url(<%= asset_path "body/texture_light.png" %>);
-  background-color: #fafafa;
-}
-
-ul.features {
-  list-style: none;
-  color: #555;
-  padding: 1em 0;
-}
-
-ul.features li {
-  display: block;
-  padding: 12px 0;
-}
-
-ul.features li a {
-  text-decoration: none;
-  color: inherit;
-  opacity: 0.7;
-  vertical-align: middle;
-}
-
-ul.features li a.active {
-  opacity: 1;
-}
-
-#encrypted_voice {
-  background-color: #faf9f9;
-  position: relative;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-
-@media screen and (min-width: 40.5em) {
-  #encrypted_voice .carousel-frame {
-    float: left;
-    margin-right: 50px;
-  }
-  #encrypted_texts .carousel-frame {
-    float: right;
-    margin-left: 50px;
-  }
-}
-
 
 #final-cta {
   background-color: #dddddd;
