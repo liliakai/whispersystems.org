@@ -49,31 +49,8 @@
   <body>
     <div id="wrap">
       <div id="container">
-        <header class='main-head'>
-          <nav class='topnav bar container'>
-            <div class='header-graphics'>
-              {% include nav.html %}
-              <a href='/' id='text-logo'>
-                <img class='whisper' alt="Whisper Systems" src="{% asset_path header/whispersystems.png %}" width="243" height="79">
-              </a>
-            </div>
-
-          </nav>
-
-          {% if page.header == true %}
-            <div id="telephone">
-              <div class='text container'>
-                <p class='tagline1'>Security, simplified.</p> <!-- ".tagline1" and ".tagline2" could probably be changed to be clearer -->
-                <p class='tagline2'><strong>Open Source</strong> security for mobile devices.</p>
-                <a class='button button-info' href="apps">View Apps</a>
-              </div>
-            </div>
-
-            <div class='container solutions'> <!-- .solutions is not really a semantic description. -->
-              <p>Get started.</p>
-            </div>
-          {% endif %}
-        </header>
+        {% include nav.html %}
+      </div>
 
         {{ content }}
 

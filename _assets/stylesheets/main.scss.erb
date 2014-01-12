@@ -86,52 +86,48 @@ body {
  * Navbar
  **********/
 
-.bar-wrap {
-  width: 100%;
+nav {
   background-color: #171717;
+
+  ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    float: left;
+
+    a {
+      text-decoration: none;
+      line-height: 50px;
+      display: block;
+      float: none;
+      padding: 10px 15px;
+      color: #cecece;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+
+      &:hover { text-decoration: underline; }
+
+      &.twitter {
+        display: block;
+        width: 42px;
+        height: 34px;
+        margin-top: 14px;
+        margin-left: 8px;
+        padding: 0;
+        text-indent: -9000px;
+        background-image: url(<%= asset_path "header/social_icons.png" %>);
+        background-position: 42px 0;
+      }
+    }
+  }
 }
 
-.bar {
-  position: relative;
-  margin: 0 auto;
-}
-.bar ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.bar li {
-  float: left;
-}
-.bar li a {
-  text-decoration: none;
-  line-height: 50px;
-  display: block;
-  float: none;
-  padding: 10px 15px;
-  color: #cecece;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-}
-.bar li a:hover { text-decoration: underline; }
-.bar li a.facebook,
-.bar li a.twitter {
-  display: block;
-  width: 42px;
-  height: 34px;
-  margin-top: 14px;
-  margin-left: 8px;
-  padding: 0;
-  text-indent: -9000px;
-  background-image: url(<%= asset_path "header/social_icons.png" %>);
-
-}
-.bar li a.twitter {
-  background-position: 42px 0;
-}
-.bar .notice {
+.notice {
   font-size: 14px;
   margin-left: 58px;
   padding: 15px 0 0 0;
@@ -142,6 +138,15 @@ body {
 /**********
  * Header
  **********/
+
+header {
+  background-color: #73c382;
+  padding: 1em;
+
+  h1, h2 {
+    color: #ffffff;
+  }
+}
 
 .main-head {
   background-color: #171717;
@@ -353,10 +358,8 @@ ul.social-buttons li{
   text-align: center;
 }
 #main article h2 {
-  color: #333;
   font-size: 36px;
   text-align: center;
-  font-weight: normal;
 }
 #main article h3 {
   color: #555;
