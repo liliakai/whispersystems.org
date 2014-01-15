@@ -85,17 +85,29 @@ body {
  **********/
 
 nav {
-  background-color: #171717;
+  background-color: #3b4e54;
+  text-align: center;
+  color: #758489;
 
   ul {
-    float: right;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
+  &.home {
+    background-color: #73c382;
+
+    #text-logo { display: none; }
+
+    ul {
+      float: none;
+      margin: auto;
+    }
+  }
+
   li {
-    float: left;
+    display: inline-block;
 
     a {
       text-decoration: none;
@@ -104,9 +116,8 @@ nav {
       float: none;
       padding: 10px 15px;
       color: #cecece;
-      text-transform: uppercase;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 15px;
 
       &:hover { text-decoration: underline; }
 
@@ -125,14 +136,6 @@ nav {
   }
 }
 
-.notice {
-  font-size: 14px;
-  margin-left: 58px;
-  padding: 15px 0 0 0;
-  float: left;
-  color: #cecece;
-}
-
 /**********
  * Header
  **********/
@@ -147,7 +150,25 @@ header {
   }
 }
 
-#text-logo, #text-logo img { display: block; }
+footer {
+  margin-top: 2em;
+  padding-top: 50px;
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  background-color: #3b4e54;
+
+  .notice {
+    font-size: 14px;
+    margin-left: 58px;
+    padding: 15px 0 0 0;
+    float: left;
+    color: #cecece;
+  }
+}
+
+#text-logo { float: left; }
 
 /**********
  * Body
@@ -331,16 +352,6 @@ ul.social-buttons li{
 }
 
 #bottom {
-  margin-top: 2em;
-  padding-top: 50px;
-  height: 75px;
-  background-color: #222;
-  text-align: center;
-  color: #fff;
-  font-size: 25px;
-  background-image: url(<%= asset_path "body/white_down_arrow.png" %>);
-  background-repeat: no-repeat;
-  background-position: center -1px;
 }
 
 #twitter-widget-0 { vertical-align: middle; }

@@ -1,18 +1,10 @@
-<nav
-  {% if page.navstyle == 'home' %}
-    class='home'
-  {% endif %}
-  >
-  <div class='container'>
-    <ul>
+<nav class='{{ page.navstyle }}'>
+  <div class='container clearfix'>
+    <ul class='clearfix'>
       <li><a href="/apps">Apps</a></li>
       <li><a href="/developers">Developers</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/blog/">Blog</a></li>
-      <li><a title='Twitter' class='twitter' href="https://twitter.com/whispersystems">Twitter</a></li>
     </ul>
-    <a href='/' id='text-logo'>
-      <img class='whisper' alt="Whisper Systems" src="{% asset_path header/whispersystems.png %}" width="243" height="79">
-    </a>
   </div>
 </nav>
