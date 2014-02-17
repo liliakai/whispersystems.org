@@ -90,10 +90,10 @@ body {
 
 nav {
   background-color: #3b4e54;
-  text-align: center;
   color: #758489;
 
   ul {
+    float: right;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -101,6 +101,7 @@ nav {
 
   &.home {
     background: none;
+    text-align: center;
 
     #text-logo { display: none; }
 
@@ -112,30 +113,30 @@ nav {
 
   li {
     display: inline-block;
+  }
 
-    a {
-      text-decoration: none;
-      line-height: 50px;
+  a {
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    float: none;
+    padding: 10px 15px;
+    color: #cecece;
+    font-weight: bold;
+    font-size: 15px;
+
+    &:hover { text-decoration: underline; }
+
+    &.twitter {
       display: block;
-      float: none;
-      padding: 10px 15px;
-      color: #cecece;
-      font-weight: bold;
-      font-size: 15px;
-
-      &:hover { text-decoration: underline; }
-
-      &.twitter {
-        display: block;
-        width: 42px;
-        height: 34px;
-        margin-top: 14px;
-        margin-left: 8px;
-        padding: 0;
-        text-indent: -9000px;
-        background-image: url(<%= asset_path "header/social_icons.png" %>);
-        background-position: 42px 0;
-      }
+      width: 42px;
+      height: 34px;
+      margin-top: 14px;
+      margin-left: 8px;
+      padding: 0;
+      text-indent: -9000px;
+      background-image: url(<%= asset_path "header/social_icons.png" %>);
+      background-position: 42px 0;
     }
   }
 }
@@ -506,6 +507,7 @@ i.icon.cell {
 
   a, a:visited {
     display: inline-block;
+    line-height: normal;
     margin: 0.5em;
     padding: 0.5em;
     @include border-radius(5px);
