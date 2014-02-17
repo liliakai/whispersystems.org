@@ -189,6 +189,11 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  @include montserrat();
+  font-size: 30px;
+}
+
 #blog {
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -331,14 +336,14 @@ ul.social-buttons li{
   background-repeat: no-repeat;
   background-position: center 0;
   background-color: #FFFFFF;
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
 }
 
-#main article h1 {
-  text-align: center;
-}
 #main article h2 {
-  font-size: 36px;
-  text-align: center;
 }
 #main article h3 {
   color: #555;
@@ -364,6 +369,8 @@ ul.social-buttons li{
 
 #final-cta {
   background-color: #73c382;
+  color: #FFFFFF;
+
   .container {
     padding: 2em 3em;
   }
