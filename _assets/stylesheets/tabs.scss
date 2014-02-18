@@ -10,36 +10,10 @@
       display: inline-block;
       padding: 0 0.5em;
       color: #555;
-      font-family: 'OpenSansLight', Helvetica, Arial, sans-serif;
-      font-size: 1.3em;
 
       &.selected { font-weight: bold; }
 
-      &:after {
-        content: "";
-        position: absolute;
-        @include border-radius(10px);
-        border-color: #dddddd;
-        display:block;
-        width: 10px;
-        height: 10px;
-        top: 2em;
-        left: 50%;
-        margin-left: -5px;
-        background-color: #dddddd;
-      }
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 275px;
-      height: 5px;
-      top: 2.7em;
-      background-color: #ddd;
-      left: 50%;
-      margin-left: -135px;
+      &:hover { cursor: pointer; }
     }
   }
 
