@@ -50,38 +50,24 @@ body {
 }
 
 .buttons {
-  @include montserrat();
   text-align: center;
 }
 
 .button {
+  @include montserrat();
+  opacity: 0.85;
+  background-color: #000000;
   display: inline-block;
-  margin: 20px;
-  margin-top: 15px;
-  text-decoration: none;
-  line-height: 62px;
-  width: 275px;
-  height: 66px;
   text-align: center;
-}
-.button-download {
-  color: white;
-  background-color: #212121;
-  background-image: url(<%= asset_path "body/buttons/download.png" %>);
-}
-.button-download .arrow {
-  padding-left: 5px;
-}
-.button-info {
-  background-image: url(<%= asset_path "body/buttons/get_info.png" %>);
-  color: #333;
-}
-.button-info .arrow {
-  padding-left: 5px;
+
+  @include border-radius(5px);
+  padding: 0.5em;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.85;
+  opacity: 1.0;
 }
 
 
