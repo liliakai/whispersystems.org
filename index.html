@@ -6,12 +6,16 @@ navstyle: home
 ---
 
 <section id="main">
+  <header id="home-header">
+    {% include nav.html %}
+    <div class='container clearfix'>
+      <div class='col span_1_of_2'>
+        <h2>Open Whisper Systems</h2>
+        <h3>Privacy, simplified</h3>
+      </div>
+    </div>
+  </header>
   <article>
-    <header id="home-header">
-      {% include nav.html %}
-      <h1>Open Whisper Systems</h1>
-      <h2>Privacy, simplified</h2>
-    </header>
     <h2>Simplicity and accessibility for everyone.</h2>
     <section class='container tabbed'>
       <ul class='tabs'>
