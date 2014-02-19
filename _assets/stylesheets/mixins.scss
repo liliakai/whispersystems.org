@@ -5,3 +5,13 @@
        -o-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin banner {
+  color: #ffffff;
+  background-color: #73c382;
+  text-align: center;
+
+  a, a:visited, a:active {
+    color: #FFFFFF;
+  }
+}

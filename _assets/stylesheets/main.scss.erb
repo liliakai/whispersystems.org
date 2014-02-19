@@ -123,8 +123,7 @@ nav {
  **********/
 
 header {
-  color: #ffffff;
-  background-color: #73c382;
+  @include banner;
   padding: 1em;
 }
 
@@ -484,9 +483,9 @@ i.icon.cell {
 }
 
 #sub_nav {
+  @include banner;
   @include lato();
   font-weight: bold;
-  background-color: #73c382;
   text-align: center;
 
   a, a:visited {
@@ -499,10 +498,11 @@ i.icon.cell {
     color: #C0DDC5;
     text-decoration: none;
 
-    &:active, &:hover, &.selected {
+    &.selected {
       color: #ffffff;
     }
   }
+
 }
 
 #home-header {
