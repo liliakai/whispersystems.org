@@ -16,11 +16,6 @@ body {
   font-size: 18px;
 }
 
-#container {
-  background-color: #fff;
-  margin: 0 auto;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 2.5em;
@@ -84,8 +79,6 @@ nav {
   background-color: #3b4e54;
   color: #758489;
 
-  #text-logo { float: left; }
-
   ul {
     float: right;
     margin: 0;
@@ -113,7 +106,6 @@ nav {
     text-decoration: none;
     line-height: 50px;
     display: block;
-    float: none;
     padding: 10px 15px;
     color: #cecece;
     font-weight: bold;
@@ -122,18 +114,6 @@ nav {
     &:hover {
       text-decoration: underline;
       color: #ffffff;
-    }
-
-    &.twitter {
-      display: block;
-      width: 42px;
-      height: 34px;
-      margin-top: 14px;
-      margin-left: 8px;
-      padding: 0;
-      text-indent: -9000px;
-      background-image: url(<%= asset_path "header/social_icons.png" %>);
-      background-position: 42px 0;
     }
   }
 }
@@ -372,9 +352,6 @@ ul.social-buttons li{
   a, a:visited, a:active {
     color: #FFFFFF;
   }
-}
-
-#bottom {
 }
 
 .twitter-follow-button {
